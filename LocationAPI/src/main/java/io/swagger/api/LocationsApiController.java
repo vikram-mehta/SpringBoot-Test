@@ -72,23 +72,23 @@ public class LocationsApiController implements LocationsApi {
 
              for (int i=0;i<10;i++) {
                 InlineResponse200 loc = new InlineResponse200();
-                loc.setName("name"+i);
-                loc.setStreetAddress("address"+i);
-                loc.setCity("city"+i);
-                loc.setZipCode("postal"+i);
-                loc.setState("state"+i);
+                loc.setName("name> "+i);
+                loc.setStreetAddress("address> "+i);
+                loc.setCity("city> "+i);
+                loc.setZipCode("postal> "+i);
+                loc.setState("state> "+i);
                 if (!locationType.equals("ATM")) {
-                    loc.setTelephone("Phone_Published"+i);
+                    loc.setTelephone("Phone_Published> "+i);
                     //                 location.telephone = searchResult[i].fields.Phone_Published;
-                    loc.setFax("Fax"+i);
+                    loc.setFax("Fax> "+i);
                     //                   location.fax = searchResult[i].fields.Fax;
                 }
-                loc.setHourOfOperation("Hours"+i);
-                loc.setSpecialMessage("Speech_Special_Br_Message"+i);
-                loc.setDistance("distance"+i);
+                loc.setHourOfOperation("Hours> "+i);
+                loc.setSpecialMessage("Speech_Special_Br_Message> "+i);
+                loc.setDistance("distance> "+i);
                 loc.setLocationType(locationType);
                 loc.setLatitude("lat"+1);
-                loc.setLongitude("mqap_geography"+i);
+                loc.setLongitude("mqap_geography> "+i);
                 locList.add(loc);
             }
 
