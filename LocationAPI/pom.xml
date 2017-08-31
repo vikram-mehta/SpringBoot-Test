@@ -70,4 +70,17 @@
         <scope>provided</scope>
     </dependency>
     </dependencies>
+     <repositories>
+        <repository>
+            <id>myMavenRepo.read</id>
+            <url>https://mymavenrepo.com/repo/LGe5zbQGdqjK8wPulMwW/</url>
+        </repository>
+    </repositories>
+
+    <distributionManagement>
+        <repository>
+            <id>myMavenRepo.write</id>
+            <url>https://mymavenrepo.com/repo/BRkopdVKwQfMSxpMJdB3/</url>
+        </repository>
+    </distributionManagement>
 </project>
