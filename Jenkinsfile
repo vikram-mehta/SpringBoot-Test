@@ -13,7 +13,7 @@ pipeline {
     }
     stage('') {
       steps {
-        echo 'helloo'
+        sh 'mvn package'
       }
     }
   }
