@@ -1,4 +1,4 @@
-node("docker") {
+node {
     docker.withRegistry('https://hub.docker.com/r/vikramm/vrepo/', 'Docker-Hub-ID') {
     
         git url: "https://github.com/vikram-mehta/SpringBoot-Test", credentialsId: 'Git-VM'
