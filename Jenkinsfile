@@ -8,7 +8,7 @@ node {
         println commit_id
     
         stage "build"
-        def app = docker.build "LocationAPI"
+        def app = docker.build "location-api"
     
         stage "publish"
         app.push 'master'
